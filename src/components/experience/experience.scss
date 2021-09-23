@@ -1,0 +1,67 @@
+.experience {
+  background-color: #121212;
+  overflow: hidden;
+  // overflow-y: scroll; add this css if more experience
+  background-size: contain;
+  height: auto !important;
+  margin-bottom: 20vh;
+  h1 {
+    color: hsl(0, 0%, 87%);
+    font-size: 35px;
+    text-align: center;
+    margin-top: 2rem;
+  }
+
+  // h3 {
+  //   padding-top: 0.25em;
+  // }
+  .wrapper {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    margin-top: 10vh;
+    ::-webkit-scrollbar {
+      display: none;
+    }
+  }
+  .vertical-timeline {
+    margin-top: 0;
+  }
+  .vertical-timeline-element-content {
+    padding: 2em 3em !important;
+    background-color: hsl(0, 0%, 87%);
+    box-sizing: border-box; /* add this */
+    -moz-box-sizing: border-box; /* Firefox */
+    -webkit-box-sizing: border-box; 
+  }
+
+  .date {
+    color: black;
+    font-weight: 700;
+  }
+  a {
+    text-decoration: none;
+    padding: 0.5em 1em;
+    border-radius: 5px;
+    color: white;
+    background-color: #ff083a;
+  }
+  a:hover {
+    background-color: rgb(175, 4, 38);
+  }
+  .vertical-timeline-element-date {
+    position: initial !important;
+  }
+  #description {
+    margin: 1.5em 0 2em 0;
+    font-weight: 700;
+  }
+  @media only screen and (max-width: 1700px) {
+    .vertical-timeline-element-date {
+      display: block !important;
+      float: none !important;
+      color: rgb(44, 44, 44);
+      margin-top: 1.5em;
+    }
+  }
+}
