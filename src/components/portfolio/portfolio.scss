@@ -6,24 +6,21 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-top: 30vh;
-
+  margin-bottom: 20vh;
 
   .content {
     margin-bottom: 100px;
     text-align: center;
-      h1{
-    font-size: 35px;
-    color:#dedede;
-    margin-top: 2rem;
-      }
-      p{
-        font-size: 16px;
-        line-height: 30px;
-        color:#dedede;
-        
-          
-      }
+    h1 {
+      font-size: 35px;
+      color: #dedede;
+      margin-top: 2rem;
+    }
+    p {
+      font-size: 16px;
+      line-height: 30px;
+      color: #dedede;
+    }
   }
 
   ul {
@@ -31,8 +28,6 @@
     padding: 0;
     list-style: none;
     display: flex;
-
-    
   }
 
   .container {
@@ -41,8 +36,6 @@
     align-items: center;
     justify-content: center;
     flex-wrap: wrap;
-
-   
 
     .item {
       width: 220px;
@@ -56,10 +49,8 @@
       color: white;
       text-align: center;
       position: relative;
-      transition: all .5s ease;
+      transition: all 0.5s ease;
       cursor: pointer;
-
-      
 
       h3 {
         position: absolute;

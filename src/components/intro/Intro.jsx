@@ -9,7 +9,14 @@ export default function Intro() {
     init(textRef.current, {
       showCursor: true,
       backDelay: 1500,
-      strings: ["Full Stack Web Development.", "Open Source.", "Competitive Programming.", "Gaming.", "Cats.","Music."],
+      strings: [
+        "Full Stack Web Development.",
+        "Open Source.",
+        "Competitive Programming.",
+        "Gaming.",
+        "Cats.",
+        "Music.",
+      ],
     });
   }, []);
 
@@ -28,7 +35,7 @@ export default function Intro() {
             I'm into <span ref={textRef}></span>
           </h3>
         </div>
-        <a href="#about">
+        <a href="#about" className="drop-arrow">
           <img src="assets/down.png" alt="" />
         </a>
       </div>
