@@ -14,7 +14,6 @@ export default function Intro() {
         "Open Source.",
         "Competitive Programming.",
         "Gaming.",
-        "Cats.",
         "Music.",
       ],
     });
