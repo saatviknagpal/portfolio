@@ -31,45 +31,80 @@
   }
 
   .container {
-    width: 70%;
+    width: 100%;
     display: flex;
-    align-items: center;
-    justify-content: center;
     flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
 
     .item {
-      width: 220px;
-      height: 150px;
-      border-radius: 20px;
-      border: 1px solid rgb(240, 239, 239);
-      margin: 10px 20px;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      color: white;
-      text-align: center;
+      width: 30vw;
+      height: 45vh;
+      margin: 30px 10px;
       position: relative;
       transition: all 0.5s ease;
+      display: flex;
+      justify-content: center;
       cursor: pointer;
 
-      h3 {
+      h3,
+      a {
         position: absolute;
         font-size: 20px;
+        text-align: center;
+        margin-top: 7rem;
+      }
+      .devicon-github-original {
+        position: absolute;
+        margin-top: 5rem;
+        font-size: 3rem;
+        color: white;
+        text-align: center;
+        margin-left: -5rem;
+        &:hover {
+          color: grey;
+          transition: all 0.5s ease;
+        }
+      }
+      .live-icon {
+        position: absolute;
+        margin-top: 5rem;
+        font-size: 3.2rem;
+        color: white;
+        text-align: center;
+        margin-left: 1rem;
+
+        &:hover {
+          color: red;
+          transition: all 0.5s ease;
+        }
       }
 
       img {
         width: 100%;
         height: 100%;
-        object-fit: cover;
+        object-fit: fill;
         z-index: 1;
       }
 
       &:hover {
-        background-color: #15023a;
         img {
           opacity: 0.2;
           z-index: 0;
         }
+      }
+    }
+  }
+  @media (max-width: 768px) {
+    .container {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+
+      .item {
+        width: 80vw;
+        height: 40vh;
       }
     }
   }
