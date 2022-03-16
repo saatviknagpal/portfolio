@@ -112,10 +112,19 @@ export const frontend = [
 export const fullStack = [
   {
     id: 1,
+    title: "API Store",
+    img: "https://user-images.githubusercontent.com/61618767/158543214-0d14852d-d9e2-48b0-b711-dc918e0006dc.png",
+    link: "https://github.com/saatviknagpal/api-store",
+    icon: "devicon-github-original",
+    live: "https://api-mern-store.herokuapp.com/"
+  },
+  {
+    id: 2,
     title: "Mind Matters (Hackathon)",
     img: "https://user-images.githubusercontent.com/61618767/153759171-d404b2fd-f147-4978-b40a-2838775d75e6.png",
     link: "https://github.com/saatviknagpal/Mind-Matters",
     icon: "devicon-github-original",
   },
+  
   
 ];
