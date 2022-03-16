@@ -7,7 +7,7 @@ import {FiRadio} from "react-icons/fi"
 import { frontend, fullStack } from "../../Util/data";
 
 export default function Portfolio() {
-  const [selected, setSelected] = useState("frontend");
+  const [selected, setSelected] = useState("fullStack");
   const [data, setData] = useState([]);
   const list = [
     {
@@ -29,7 +29,7 @@ export default function Portfolio() {
         setData(fullStack);
         break;
       default:
-        setData(frontend);
+        setData(fullStack);
     }
   }, [selected]);
 
