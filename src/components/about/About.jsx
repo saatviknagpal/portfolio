@@ -17,7 +17,7 @@ export default function About() {
           Apart from my technical side, I love to play video games, listen to
           music and enjoy going for walks.
         </p>
-        <a href="/">View Resume</a>
+        <a href="https://drive.google.com/file/d/1HYssmg2tbtqGc1wivssKZ8Sl9prjERcF/view">View Resume</a>
       </div>
       <div className="skills">
         <Skills />
