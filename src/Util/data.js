@@ -57,6 +57,16 @@ export const experienceData = [
     date: "March 2021 - May 2021",
     icon: "work",
   },
+  {
+    id: 2,
+    title: "Frontend Developer Intern",
+    program: "TGH Technologies",
+    description:
+      "Developed the frontend of The Social Town, a virtual platform for community building and social change initiatives, utilizing React.js and state management with Redux Toolkit. Improved user experience for Boring Bots, a web platform for streamlining mundane tasks. Built a sophisticated admin dashboard for a movie stock market application incorporating visually appealing charts with Chart.js.",
+    buttonText: "View Certificates & LOR",
+    date: "May 2022 - Aug 2022",
+    icon: "work",
+  },
 ];
 
 export const educationData = [
