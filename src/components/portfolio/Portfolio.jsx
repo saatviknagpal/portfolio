@@ -1,8 +1,7 @@
 import { useEffect, useState } from "react";
 import PortfolioList from "../portfolioList/PortfolioList";
 import "./portfolio.scss";
-import {FiRadio} from "react-icons/fi"
-
+import { FiRadio } from "react-icons/fi";
 
 import { frontend, fullStack } from "../../Util/data";
 
@@ -40,33 +39,36 @@ export default function Portfolio() {
         <p>Some of my works..</p>
       </div>
       <ul>
-        {list.map((item) => (
-          <PortfolioList
-            title={item.title}
-            active={selected === item.id}
-            setSelected={setSelected}
-            id={item.id}
-          />
-        ))}
+        {list
+          .slice()
+          .reverse()
+          .map((item) => (
+            <PortfolioList
+              title={item.title}
+              active={selected === item.id}
+              setSelected={setSelected}
+              id={item.id}
+            />
+          ))}
       </ul>
       <div className="container">
-        {data.map((d) => (
-          <div className="card">
-            <div className="item" key={d.id}>
-              <img src={d.img} alt="" />
-              <h3 className="text">{d.title}</h3>
-              <a href={d.link}>
-                <i className={d.icon} alt="" />
-                
-              </a>
-              <a href={d.live}>
-              <FiRadio className= "live-icon"/>
-              </a>
-              
-              
+        {data
+          .slice()
+          .reverse()
+          .map((d) => (
+            <div className="card">
+              <div className="item" key={d.id}>
+                <img src={d.img} alt="" />
+                <h3 className="text">{d.title}</h3>
+                <a href={d.link}>
+                  <i className={d.icon} alt="" />
+                </a>
+                <a href={d.live}>
+                  <FiRadio className="live-icon" />
+                </a>
+              </div>
             </div>
-          </div>
-        ))}
+          ))}
       </div>
     </div>
   );
